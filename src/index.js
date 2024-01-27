@@ -11,11 +11,15 @@ const checkIncidents = async () => {
 
   incidents.active.forEach((incident) => {
     if (notified.has(incident.id)) return;
-
+    const dispatchTime = incident.receivedTime.toLocaleTimeString("en-us", {
+      timeZone: 'America/Los_Angeles',
+      timeStyle: "short",
+      hour12: false,
+  });
     const distance = haversine(incident.coordinates, config.alertRegion.center);
 
     if (distance <= config.alertRegion.radius) {
-      console.log(`🚨 Incident ${incident.id} is ${distance} miles away`);
+      console.log(`🚨 Incident ${incident.id} is ${distance} miles away, dispatched at ${dispatchTime}`);
 
       notified.add(incident.id);
       postToDiscordWebhook(incident, distance);
