@@ -2,7 +2,7 @@
   "name": "pulsepoint-alerts",
   "private": true,
   "main": "src/index.js",
-  "author": "Podskio",
+  "author": "Jaryn",
   "license": "MIT",
   "scripts": {
     "start": "node src/index.js"
