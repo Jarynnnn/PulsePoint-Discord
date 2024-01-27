@@ -9,6 +9,7 @@ Set up the app with the following in `config.json`
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `agencies`                 | Array of PulsePoint agency IDs.                                                                                                                        |
 | `agencyLogoURL`            | Image URL of the agency's logo.                                                                                                                        |
+| `userID`            | The Discord User ID of the user you want to mention.                                                                                                                         |
 | `webhookURL`               | URL of your Discord webhook.                                                                                                                           |
 | `checkInterval`            | Time in minutes to check for incidents (5-10 min recommended to avoid flooding the API).                                                               |
 | `alertRegion.center`       | 2 numbers representing the latitude and longitude of your location.                                                                                    |
