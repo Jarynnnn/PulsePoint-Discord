@@ -16,7 +16,7 @@ const postToDiscordWebhook = (incident, distance) => {
     const image = `https://www.mapquestapi.com/staticmap/v5/map?key=${config.credentials.mapQuestKey}&center=${formatCoords(config.alertRegion.center)}&zoom=13&locations=${formatCoords(config.alertRegion.center)}||${formatCoords(incident.coordinates)}|incident-lg&size=600,400&defaultMarker=marker-home&size=600,400&type=dark`
     const embed = {
         title: incident.type,
-        description: `**Distance:** ${distance.toFixed(2)} miles\n**Address***: ${incident.address}\n**Time**: ${dispatchTime}`,
+        description: `**Distance:** ${distance.toFixed(2)} miles\n**Address***: ${incident.address}\n**Time**: ${dispatchTime}n\n*<:greylocation:1198947873702805574>: Your Location | ⚠️: Incident Location*`,
         image: {
             url: image,
         },
