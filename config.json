@@ -3,7 +3,6 @@
   "agencyLogoURL": "",
   "userID": "", 
   "webhookURL": "",
-  "mailingList": [],
   "checkInterval": 5,
   "alertRegion": {
     "center": [0.0000, -0.00000],
