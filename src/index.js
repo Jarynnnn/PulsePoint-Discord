@@ -1,6 +1,6 @@
 const { getIncidents } = require("pulsepoint");
 const haversine = require("./math");
-const postToDiscordWebhook = require("./mail");
+const postToDiscordWebhook = require("./webhook");
 
 const config = require("../config.json");
 
